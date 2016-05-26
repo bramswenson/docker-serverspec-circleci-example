@@ -7,7 +7,7 @@ set :os, family: 'ubuntu', arch: 'x86_64'
 if ENV['DOCKER_IMAGE']
   set :docker_image, ENV['DOCKER_IMAGE']
 else
-  image = ::Docker::Image.build_from('../..')
+  image = ::Docker::Image.build_from_dir('../..')
   ENV['DOCKER_IMAGE'] = image.id
   set :docker_image, image.id
 end
