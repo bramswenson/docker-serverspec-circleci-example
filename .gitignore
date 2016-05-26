@@ -1,3 +1,4 @@
 /build/*
 Dockerfile
 /docker/serverspec/vendor/bundle
+/docker/serverspec/.bundle

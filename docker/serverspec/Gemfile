@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'serverspec'
-gem 'docker-api'
+gem 'serverspec', '~> 2.36.0'
+gem 'specinfra',  '~> 2.57.5'
+gem 'docker-api', '~> 1.28.0'
 gem 'rspec_junit_formatter', git: 'git@github.com:circleci/rspec_junit_formatter.git'
